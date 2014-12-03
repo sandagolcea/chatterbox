@@ -16,21 +16,20 @@ You can also add your own responses to your chosen keywords (see *how to run*)
 How to run
 ------
 
-`git clone git@github.com:sandagolcea/chatterbox.git`
-`cd chatterbox`
-`ruby chatbot.rb`
+    git clone git@github.com:sandagolcea/chatterbox.git
+    cd chatterbox
+    ruby chatbot.rb
 
-To add more responses, write this phrase in the chatbot discussion, replacing the keywords and the response with your own input.
+To add more responses, write this phrase in the chatbot discussion, 
+replacing the keywords and the response with your own input :
+   `When someone says '<keywords>' you say '<response>'`
 
-```ruby
-When someone says '<keywords>' you say '<response>'
-```ruby
 
 Possible Improvements
 ------
-- Adding the keywords/response pairs permanently (Added for session duration only)
-- Better question/answer implementation (Rogerian Psychoteraphy, see Weizenbaum's paper on on ELIZA)
-- Modularization, probably could reimplement from 0, maybe OO, see [Eliza bot js implementation](http://www.masswerk.at/elizabot/) 
+ - Adding the keywords/response pairs permanently (Added for session duration only)
+ - Better question/answer implementation (Rogerian Psychoteraphy, see [Weizenbaum's paper on on ELIZA](http://en.wikipedia.org/wiki/ELIZA))
+ - Modularization, probably could reimplement from 0, maybe OO, see [Eliza bot js implementation](http://www.masswerk.at/elizabot/) 
 
 Original ruby input:
 ------
