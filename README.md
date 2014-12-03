@@ -1,13 +1,38 @@
 Chatterbox Challenge
 ====================
 
+What is it?
+------
+This is a regular chat bot with a very limited vocabulary
 
 What does it do?
 ------
 
+It chats with you on a limited range of items.
 The chatbot is in the 'chatbot.rb' file, run it from the command line and then experiment chatting with it.
 
-Given ruby text was:
+You can also add your own responses to your chosen keywords (see *how to run*)
+
+How to run
+------
+
+`git clone git@github.com:sandagolcea/chatterbox.git`
+`cd chatterbox`
+`ruby chatbot.rb`
+
+To add more responses, write this phrase in the chatbot discussion, replacing the keywords and the response with your own input.
+
+```ruby
+When someone says '<keywords>' you say '<response>'
+```ruby
+
+Possible Improvements
+------
+- Adding the keywords/response pairs permanently (Added for session duration only)
+- Better question/answer implementation (Rogerian Psychoteraphy, see Weizenbaum's paper on on ELIZA)
+- Modularization, probably could reimplement from 0, maybe OO, see [Eliza bot js implementation](http://www.masswerk.at/elizabot/) 
+
+Original ruby input:
 ------
 
 ```ruby
@@ -38,3 +63,4 @@ Resources:
 * [Ruby Regex Cheat Sheet](http://www.ralfebert.de/archive/ruby/regex_cheat_sheet/)
 * [Eliza Chat Bot](http://en.wikipedia.org/wiki/ELIZA)
 * [Eliza Chat Bot implementation paper](http://www.cse.buffalo.edu/~rapaport/572/S02/weizenbaum.eliza.1966.pdf)
+* [Eliza bot js implementation](http://www.masswerk.at/elizabot/)
